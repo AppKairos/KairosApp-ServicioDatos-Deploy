@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ImprentaAPI</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "M:ImprentaAPI.PresentationLayer.Controllers.AfichesController.PostCotizacion(ImprentaAPI.BusinessLogicLayer.Models.AficheModel)" -->
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.AuthController.Register(ImprentaAPI.BusinessLogicLayer.Models.UsuarioModel)">
+            <summary>
+            Permite registrar un nuevo cliente con el rol definido por defecto de este, debido a que los roles de administrador solo son creados por comandos sql
+            Se debe ingresar un modelo de usuario que tena ci,nombre,correo,telefono y password los demas atributos son llenados por defecto en el backend
+            </summary>
+            <param name="usuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.AuthController.Login(ImprentaAPI.BusinessLogicLayer.Models.UsuarioLoginModel)">
+            <summary>
+            Permite hacer login a un usuario o administrador para usar las caracteristicas de la API este end point solo necesita un ci (Carnet de identidad y contraseña y devuelve un token con los 
+            atributos del usuario si es que este esta registrado
+            </summary>
+            <param name="usuarioLoginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.AuthController.RegisterGmail(ImprentaAPI.BusinessLogicLayer.Models.Security.UsuarioGmailModel)">
+            <summary>
+            Permite registrar un nuevo cliente con el rol definido por defecto de este, debido a que los roles de administrador solo son creados por comandos sql
+            Se debe ingresar un modelo de usuario que tena ci,nombre,correo,telefono y password los demas atributos son llenados por defecto en el backend
+            </summary>
+            <param name="usuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.AuthController.LoginGmail(ImprentaAPI.BusinessLogicLayer.Models.Security.UsuarioGmailModel)">
+            <summary>
+            Permite hacer login a un usuario o administrador para usar las caracteristicas de la API este end point solo necesita un ci (Carnet de identidad y contraseña y devuelve un token con los 
+            atributos del usuario si es que este esta registrado
+            </summary>
+            <param name="usuarioGmailLoginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.AuthController.DeleteClienteAsync(System.Int64)">
+            <summary>
+            Permite la eliminacion de un perfil de la tabla de usuarios pasando el id
+            </summary>
+            <param name="clienteId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.AuthController.DeleteClienteGmailAsync(System.Int64)">
+            <summary>
+            Permite la eliminacion de un perfil de la tabla de usuarios gmail pasando el id
+            </summary>
+            <param name="clienteId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.AuthController.GetUsuariosAsync(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="usuarioId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.AuthController.GetUsuariosGmailAsync(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="usuarioId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.AuthController.GetUsuarioAsync(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="usuarioId"></param>
+            <param name="usuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.AuthController.GetUsuarioGmailAsync(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="usuarioId"></param>
+            <param name="usuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.EmpastadoController.GetEmpastadosAsync(System.String)">
+            <summary>
+            Obtiene todos los empastados que ofrece la imprenta kairos
+            <param name="orderBy"></param>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.EmpastadoController.GetEmpastadoAsync(System.Int64)">
+            <summary>
+            Obtiene un empastado especifico segun el id que es requisito enviarlo por meedio de la peticion 
+            </summary>
+            <param name="empastadoId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.EmpastadoController.CreateEmpastadoAsync(ImprentaAPI.BusinessLogicLayer.Models.EmpastadoModel)">
+            <summary>
+            Permite crear un nuevo empastado 
+            </summary>
+            <param name="nuevoEmpastado"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.EmpastadoController.UpdateEmpastadoAsync(System.Int64,ImprentaAPI.BusinessLogicLayer.Models.EmpastadoModel)">
+            <summary>
+            Permite actualizar un empastado ya existente mediante su id
+            </summary>
+            <param name="empastadoId"></param>
+            <param name="actualizarEmpastado"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.EmpastadoController.DeleteEmpastadoAsync(System.Int64)">
+            <summary>
+            Permite eliminar un empastado ya existente mediante su id
+            </summary>
+            <param name="empastadoId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.PrecioAcabadoController.GetPreciosAsync(System.String)">
+            <summary>
+            Obtiene todos los precios de la imprenta kairos
+             /// </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.PrecioAcabadoController.GetPrecioAcabadoAsync(System.String)">
+            <summary>
+            Obtiene un precio especifico segun el id que es requisito enviarlo por meedio de la peticion 
+            </summary>
+            <param name="precioId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.PrecioAcabadoController.CreatePrecioAcabadoAsync(ImprentaAPI.BusinessLogicLayer.Models.Security.PrecioAcabadoModel)">
+            <summary>
+            Permite crear un nuevo precio 
+            </summary>
+            <param name="nuevoPrecio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.PrecioAcabadoController.UpdatePrecioAsync(System.String,ImprentaAPI.BusinessLogicLayer.Models.Security.PrecioAcabadoModel)">
+            <summary>
+            Permite actualizar un precio ya existente mediante su id
+            </summary>
+            <param name="precioId"></param>
+            <param name="actualizarPrecio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.PrecioAcabadoController.DeletePrecioAsync(System.String)">
+            <summary>
+            Permite eliminar un precio ya existente mediante su id
+            </summary>
+            <param name="precioId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.PrecioController.GetPreciosAsync(System.String)">
+            <summary>
+            Obtiene todos los precios de la imprenta kairos
+             /// </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.PrecioController.GetPreciosNombreAsync">
+            <summary>
+            Obtiene todos los precios por su nombre sin repetidos de la imprenta kairos
+             /// </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.PrecioController.GetPreciosTipoxNombreAsync(System.String)">
+            <summary>
+            Obtiene todos los nombres de la tabla precio dado un nombre de la imprenta kairos
+             /// </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.PrecioController.GetPrecioAsync(System.Int64)">
+            <summary>
+            Obtiene un precio especifico segun el id que es requisito enviarlo por meedio de la peticion 
+            </summary>
+            <param name="precioId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.PrecioController.CreatePrecioAsync(ImprentaAPI.BusinessLogicLayer.Models.PrecioModel)">
+            <summary>
+            Permite crear un nuevo precio 
+            </summary>
+            <param name="nuevoPrecio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.PrecioController.UpdatePrecioAsync(System.Int64,ImprentaAPI.BusinessLogicLayer.Models.PrecioModel)">
+            <summary>
+            Permite actualizar un precio ya existente mediante su id
+            </summary>
+            <param name="precioId"></param>
+            <param name="actualizarPrecio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.PrecioController.DeletePrecioAsync(System.Int64)">
+            <summary>
+            Permite eliminar un precio ya existente mediante su id
+            </summary>
+            <param name="precioId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.ReservaController.GetReservasAsync(System.String)">
+            <summary>
+            Obtiene todos las reservas de la imprenta kairos
+             /// </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.ReservaController.GetReservasEmpastadosAsync">
+            <summary>
+            Obtiene todos las reservas con sus campos de empastados imprenta kairos
+             /// </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.ReservaController.GetReservasTipoUsuarioAsync(System.String)">
+            <summary>
+            Obtiene todos las reservas dependiendo al tipo si es manual o gmail imprenta kairos
+             /// </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.ReservaController.GetReservaAsync(System.Int64)">
+            <summary>
+            Obtiene una reserva especifica segun el id que es requisito enviarlo por meedio de la peticion 
+            </summary>
+            <param name="reservaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.ReservaController.CreateReservaAsync(ImprentaAPI.BusinessLogicLayer.Models.ReservaModel)">
+            <summary>
+            Permite crear una nueva reserva 
+            </summary>
+            <param name="nuevaReserva"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.ReservaController.UpdateReservaAsync(System.Int64,ImprentaAPI.BusinessLogicLayer.Models.ReservaModel)">
+            <summary>
+            Permite actualizar una reserva ya existente mediante su id
+            </summary>
+            <param name="reservaId"></param>
+            <param name="actualizarReserva"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.ReservaController.DeleteReservaAsync(System.Int64)">
+            <summary>
+            Permite eliminar una reserva ya existente mediante su id
+            </summary>
+            <param name="reservaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.SelloController.GetSellosAsync(System.String)">
+            <summary>
+            Obtiene todos los sellos que ofrece la imprenta kairos
+            <param name="orderBy"></param>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.SelloController.GetSelloAsync(System.Int64)">
+            <summary>
+            Obtiene un sello especifico segun el id que es requisito enviarlo por meedio de la peticion 
+            </summary>
+            <param name="selloId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.SelloController.CreateSelloAsync(ImprentaAPI.BusinessLogicLayer.Models.SelloModel)">
+            <summary>
+            Permite crear un nuevo sello 
+            </summary>
+            <param name="nuevoSello"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.SelloController.UpdateSelloAsync(System.Int64,ImprentaAPI.BusinessLogicLayer.Models.SelloModel)">
+            <summary>
+            Permite actualizar un sello ya existente mediante su id
+            </summary>
+            <param name="selloId"></param>
+            <param name="actualizarSello"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.PresentationLayer.Controllers.SelloController.DeleteSelloAsync(System.Int64)">
+            <summary>
+            Permite eliminar un sello ya existente mediante su id
+            </summary>
+            <param name="selloId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.Controllers.ProductoController.GetProductosAsync(System.String)">
+            <summary>
+            Obtiene todos los productos que ofrece la imprenta kairos
+            <param name="orderBy"></param>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.Controllers.ProductoController.GetProductoAsync(System.Int64)">
+            <summary>
+            Obtiene un producto especifico segun el id que es requisito enviarlo por meedio de la peticion 
+            </summary>
+            <param name="productoId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.Controllers.ProductoController.CreateProductAsync(ImprentaAPI.Models.ProductoModel)">
+            <summary>
+            Permite crear un nuevo producto 
+            </summary>
+            <param name="nuevoProducto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.Controllers.ProductoController.UpdateProductoAsync(System.Int64,ImprentaAPI.Models.ProductoModel)">
+            <summary>
+            Permite actualizar un producto ya existente mediante su id
+            </summary>
+            <param name="productoId"></param>
+            <param name="actualizarProducto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ImprentaAPI.Controllers.ProductoController.DeleteProductoAsync(System.Int64)">
+            <summary>
+            Permite eliminar un producto ya existente mediante su id
+            </summary>
+            <param name="productoId"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
